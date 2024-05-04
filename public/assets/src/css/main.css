@@ -1,0 +1,86 @@
+/* ==========================================================================
+
+	Template Name: Beef Template
+	Note: This is style css.
+
+========================================================================== */
+   
+/* =====================================
+    Tailwind Css - Base Components
+===================================== */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+/* =====================================
+    Default Styles
+===================================== */
+@import "./default/_base.css";
+@import "./default/_404.css";
+@import "./default/_confirmation.css";
+@import "./default/_coming-soon.css";
+
+/* =====================================
+    Animate.css
+===================================== */
+@import "animate.css/animate.min.css";
+
+/* =====================================
+    Common Styles
+===================================== */
+@import "./common/_divider.css";
+@import "./common/_button.css";
+@import "./common/_socialicon.css";
+@import "./common/_slider.css";
+@import "./common/_section-title.css";
+@import "./common/_opening-hours.css";
+@import "./common/_text-cols.css";
+@import "./common/_form.css";
+@import "./common/_tabs.css";
+@import "./common/_lightbox.css";
+
+
+
+/* =====================================
+    Header Styles
+===================================== */
+@import "./header/_header.css";
+@import "./header/_topbar.css";
+@import "./header/_menumobile.css";
+
+
+/* =====================================
+    Header Styles
+===================================== */
+@import "./footer/_footer.css";
+
+
+/* =====================================
+    Hero Styles
+===================================== */
+@import "./hero/_hero.css";
+
+
+/* =====================================
+    Blocks Styles
+===================================== */
+@import "./blocks/_about.css";
+@import "./blocks/_special-offers.css";
+@import "./blocks/_menu.css";
+@import "./blocks/_services.css";
+@import "./blocks/_cta.css";
+@import "./blocks/_gallery.css";
+@import "./blocks/_team.css";
+@import "./blocks/_testimonials.css";
+@import "./blocks/_badges.css";
+@import "./blocks/_contact.css";
+@import "./blocks/_history.css";
+@import "./blocks/_events.css";
+@import "./blocks/_location.css";
+@import "./blocks/_blog.css";
+@import "./blocks/_landing.css";
+
+
+/* =====================================
+    Tailwind Css - Utilities
+===================================== */
+@import "tailwindcss/utilities";

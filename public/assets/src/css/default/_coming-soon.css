@@ -1,0 +1,46 @@
+/* ===================================
+    Coming soon
+====================================== */
+.coming-soon {
+	@apply relative;
+	&__wrapper {
+		@apply flex items-center justify-center;
+		height: 100vh;
+	}
+	&__container {
+		@apply grid grid-cols-12 gap-0 h-full;
+	}
+	&__image {
+		@apply col-span-12 md:col-span-4 lg:col-span-6 h-full relative overflow-hidden hidden md:flex;
+		img {
+			@apply w-full h-full object-cover object-center;
+		}
+	}
+	&__content {
+		@apply col-span-12 md:col-span-8 lg:col-span-6 h-full flex flex-col items-center justify-center px-4 py-8 sm:p-8 md:px-8 lg:px-8 ;
+		.content {
+			@apply flex flex-col items-center justify-center rounded-xl bg-coarseWool-800 h-full px-4 sm:p-8;
+		}
+		.logo {
+			@apply mb-16 w-[180px];
+		}
+	}
+	&__title {
+		@apply !text-title-3 sm:!text-title-2 md:!text-title-1 font-normal !uppercase font-barlow-condensed;
+	}
+	&__text {
+		@apply text-base xl:text-xl !text-center;
+	}
+	&__form {
+		@apply flex flex-wrap items-center justify-between w-full gap-4;
+		.form__body {
+			@apply sm:!w-[68%] md:!w-[70%] xl:!w-[74%] mb-4 inline-flex flex-wrap sm:mb-0;
+			.coming-soon-input {
+				@apply mb-0;
+			}
+		}
+		.form__footer {
+			@apply !w-[18%] inline-flex flex-wrap;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+/*==========================
+    Section Title 
+===========================*/
+.section-title {
+    @apply pb-2 mb-0 max-w-[600px] relative;
+    &__subtitle {
+        @apply text-calico-500 text-subtitle-2 sm:text-subtitle-1 w-full font-sorts-mill-goudy font-normal mb-0 italic;
+    }
+    &__title {
+        @apply text-coarseWool-100 !text-title-3 sm:!text-title-2 md:!text-title-1 mb-4 w-full font-barlow-condensed font-normal capitalize;
+    }
+    p:last-of-type {
+        @apply pb-0;
+    }
+    &__center {
+        @apply text-center mx-auto;
+    }
+}

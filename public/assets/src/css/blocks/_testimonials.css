@@ -1,0 +1,38 @@
+/*==========================
+    Testimonial Slider 
+===========================*/
+.testimonials{
+    @apply  bg-center bg-cover relative bg-no-repeat overflow-hidden;
+	background-image: url("/images/bg/bg-testimonials.jpg");
+
+    &__container{
+        @apply w-full mx-auto px-4 lg:px-0 !bg-coarseWool-900/60 flex flex-col items-center justify-center;
+    }
+    &__slider__container{
+        @apply container mx-auto px-4 lg:px-0;
+    }
+    &__slider{
+        @apply w-full sm:w-8/12 mx-auto !mb-0;
+        &__item{
+            @apply relative !flex flex-col items-center justify-center gap-12 py-20 lg:py-40;
+            &-comment{
+                @apply text-center text-coarseWool-100 text-subtitle-1 font-sorts-mill-goudy w-full;
+            }
+            &-author{
+                @apply w-full flex flex-col items-center justify-center;
+                h5{
+                    @apply !text-title-4 font-medium mb-0;
+                }
+                p{
+                    @apply text-subtitle-2 font-sorts-mill-goudy text-calico-500;
+                }
+            }
+        }
+        .slick-dots{
+            @apply absolute bottom-8;
+        }
+    }
+    .badges{
+        @apply bg-coarseWool-900/60;
+    }
+}

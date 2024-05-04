@@ -1,0 +1,15 @@
+/* ===================================
+    Social Icons
+====================================== */
+.social_icons {
+    @apply flex flex-wrap items-center justify-start gap-6 px-0 py-1 m-0;
+    li {
+        @apply flex flex-wrap items-center;
+        a {
+            @apply text-base text-calico-500;
+            &:hover {
+                @apply text-calico-700;
+            }
+        }
+    }
+}

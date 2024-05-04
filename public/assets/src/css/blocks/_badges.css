@@ -1,0 +1,21 @@
+/*==========================
+    Badges
+===========================*/
+.badges{
+    @apply w-full relative z-10;
+    &__container{
+        @apply container mx-auto;
+        .badges__item{
+            @apply w-[100px] md:w-[180px] xl:w-[220px];
+        }
+    }
+    &__list{
+        @apply flex flex-wrap items-center justify-center w-full py-12 sm:py-16 lg:py-20 xl:py-28 gap-6;
+    }
+    &__item{
+        @apply w-[100px] md:w-[120px] lg:w-[160px] xl:w-[220px];
+        img{
+            @apply w-full h-full object-contain;
+        }
+    }
+}

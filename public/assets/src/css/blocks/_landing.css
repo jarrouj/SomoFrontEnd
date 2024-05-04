@@ -1,0 +1,143 @@
+
+.landing-page__content{
+    @apply flex flex-col items-center justify-center relative overflow-hidden;
+	&:after {
+		@apply absolute top-0 right-0 hidden lg:block md:w-[120px] xl:w-[260px] bottom-0 bg-contain bg-no-repeat bg-right z-10;
+		content: "";
+		background-image: url("../img/right.png");
+	}
+	&:before {
+		@apply absolute top-0 hidden lg:block left-0 md:w-[120px] xl:w-[260px] bottom-0 bg-contain bg-no-repeat bg-left z-20;
+		content: "";
+		background-image: url("../img/left.png");
+	}
+}
+
+
+/*==========================
+    Pages
+===========================*/
+.pages {
+    @apply w-full relative z-10 flex flex-wrap items-center bg-coarseWool-600 !px-4 md:!px-6 lg:!px-12 xl:!px-24 pb-4;
+    &__container {
+        @apply container mx-auto py-6 sm:py-14 lg:py-28;
+    }
+    &__content {
+        @apply flex flex-wrap items-start justify-center gap-16 lg:px-16 md:pt-8;
+    }
+    &__title {
+        @apply w-full !text-title-3 text-center text-coarseWool-100 py-6;
+    }
+    &__item {
+        @apply flex w-full sm:w-4/12 relative flex-col items-center justify-start;
+    }
+    &__image {
+        @apply relative ;
+        &::before,
+        &::after {
+            content: "";
+            z-index: 10;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 1px solid theme("colors.calico.500");
+            border-radius: 8px;
+            transform: scale(0.2);
+            transition: transform 0.4s ease-in-out;
+            opacity: 0;
+        }
+        &::before {
+            transform-origin: left top;
+            border-right: 0;
+            border-bottom: 0;
+        }
+        &::after {
+            transform-origin: right bottom;
+            border-top: 0;
+            border-left: 0;
+        }
+
+        &:hover::before,
+        &:hover::after {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}
+
+/*==========================
+    Sections
+===========================*/
+.sections {
+    @apply w-full relative z-10 flex flex-wrap items-center bg-coarseWool-600 !px-4 md:!px-6 lg:!px-12 xl:!px-24;
+    &__container {
+        @apply container mx-auto py-14 lg:py-28;
+    }
+    &__content {
+        @apply grid grid-cols-12 gap-4 lg:gap-8 lg:px-16 pt-8;
+    }
+    &__item {
+        @apply col-span-12 sm:col-span-6 md:col-span-4 xl:col-span-3 relative;
+    }
+    &__title {
+        @apply w-full !text-title-4 text-center text-coarseWool-100 py-6;
+    }
+    &__image {
+        @apply relative w-full;
+        &::before,
+        &::after {
+            content: "";
+            z-index: 10;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 1px solid theme("colors.calico.500");
+            border-radius: 8px;
+            transform: scale(0.2);
+            transition: transform 0.4s ease-in-out;
+            opacity: 0;
+        }
+        &::before {
+            transform-origin: left top;
+            border-right: 0;
+            border-bottom: 0;
+        }
+        &::after {
+            transform-origin: right bottom;
+            border-top: 0;
+            border-left: 0;
+        }
+
+        &:hover::before,
+        &:hover::after {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}
+
+/*==========================
+    features
+===========================*/
+.features {
+    @apply w-full relative z-10;
+    &__container {
+        @apply container mx-auto;
+        .features__item {
+            @apply w-[100px];
+        }
+    }
+    &__list {
+        @apply flex flex-wrap items-center justify-between w-full p-8 sm:p-16 lg:p-20 xl:p-28 gap-6;
+    }
+    &__item {
+        @apply w-[64px];
+        img {
+            @apply w-full h-full object-contain opacity-25;
+        }
+    }
+}

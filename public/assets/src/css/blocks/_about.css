@@ -1,0 +1,46 @@
+/*==========================
+    About / Style-1 
+===========================*/
+
+.about__image-info {
+	@apply flex ;
+	.about-content {
+		@apply w-full grid grid-cols-12 gap-0;
+		&__image {
+			@apply hidden lg:block relative col-span-3 xl:col-span-6 max-h-[1080px] overflow-hidden;
+			img {
+				@apply w-full h-full object-cover object-center scale-105;
+			}
+		}
+		&__info {
+			@apply relative col-span-12 lg:col-span-9 xl:col-span-6 py-16 md:py-20 xl:py-28 px-4 sm:px-10 md:px-20 flex flex-wrap flex-col items-start justify-center xl:max-w-[720px] mx-auto;
+		}
+		&__description {
+			@apply pb-2;
+		}
+	}
+}
+
+/*==========================
+    About Us / Style-2 
+===========================*/
+.about-s2 {
+	&__container-fluid {
+		@apply relative w-full;
+	}
+	&__content {
+		@apply relative w-full grid grid-cols-12 gap-4;
+	}
+	&__image {
+		@apply col-span-3 hidden lg:block;
+		img {
+			@apply w-full h-full object-cover object-center;
+		}
+	}
+	&__text {
+		@apply col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-6 px-6 py-16 xl:px-20 xl:py-24 text-center;
+		.section-title {
+			@apply mb-0;
+		}
+	}
+}

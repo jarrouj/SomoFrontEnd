@@ -1,0 +1,24 @@
+/*==========================
+    Openings Hours
+===========================*/
+.opening-hours{
+    @apply w-full flex flex-wrap flex-col items-start justify-start border border-solid border-calico-800 px-6 py-4;
+    &__header{
+        @apply w-full flex flex-wrap justify-start;
+        h3{
+            @apply w-full !text-title-4 md:!text-title-3 font-barlow-condensed font-normal text-coarseWool-100 mb-4 xl:mb-6; 
+        }
+    }
+    &__body{
+        @apply w-full flex flex-wrap justify-start;
+    }
+    &__item{
+        @apply w-full grid grid-cols-8 sm:grid-cols-6 gap-2 mb-2 last-of-type:mb-0;
+        &-day{
+            @apply col-span-4 text-title-6 font-josefin-sans capitalize text-calico-500 font-medium;
+        }
+        &-time{
+            @apply col-span-4 sm:col-span-2 text-title-6 font-josefin-sans uppercase text-right;
+        }
+    }
+}

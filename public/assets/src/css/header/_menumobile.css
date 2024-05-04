@@ -1,0 +1,33 @@
+/* ===================================
+    Menu Mobile
+====================================== */
+.mm-menu--offcanvas{
+    z-index: 9999;
+}
+.mm-menu--theme-light {
+    --mm-color-background: theme('colors.coarseWool.800')!important;
+}
+.mm-navbar{
+    @apply !border-coarseWool-500;
+}
+.mm-navbar .mm-navbar__title{
+    @apply py-4;
+}
+.mm-navbar .mm-navbar__title span{
+    @apply !font-barlow-condensed uppercase font-medium text-calico-500;
+}
+.mm-btn--next:after, .mm-btn--prev:before{
+    @apply !border-calico-500;
+}
+.mm-listitem{
+    @apply !border-coarseWool-500;
+}
+.mm-listitem__text{
+    @apply !text-coarseWool-100;
+}
+.mm-navbars--bottom .mm-navbar a{
+    @apply !text-calico-500;
+}
+.mm-listitem__text{
+    @apply hover:!text-calico-500;
+}
