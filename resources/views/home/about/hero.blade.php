@@ -1,7 +1,7 @@
 <div class="hero-inner">
     <!-- Background -->
     <div class="hero-inner__background">
-        <img src="./images/bg/bg-cta.jpg" alt="somo restaurant" width="1620" height="560">
+        {{-- <img src="./images/bg/bg-cta.jpg" alt="somo restaurant" width="1620" height="560"> --}}
     </div>
     <!--/ Background -->
     <!-- Content -->

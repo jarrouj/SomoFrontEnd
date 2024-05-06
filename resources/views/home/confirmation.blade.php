@@ -23,7 +23,7 @@
       <div class="confirmation">
         <!-- Background -->
         <div class="confirmation__background">
-          <img src="./images/bg/bg-cta.jpg" alt="image hero" width="1620" height="560">
+          {{-- <img src="./images/bg/bg-cta.jpg" alt="image hero" width="1620" height="560"> --}}
         </div>
         <!--/ Background -->
         <!-- Content -->

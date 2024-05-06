@@ -4,29 +4,7 @@
 <head>
     @include('home.components.css')
 
-    <style>
-        .custom-select-style {
-            background-color: black;
-            color: white;
-            width: 100%;
-            border-radius: 27px;
-            margin-bottom: 30px;
-        }
-
-        .page-wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .form-wrapper {
-            max-width: 400px;
-        }
-
-        /* .form-group {
-            text-align: center;
-        } */
-    </style>
+   
 </head>
 
 <body>
