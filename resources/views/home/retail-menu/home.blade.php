@@ -78,12 +78,12 @@
     <script>
         $(document).ready(function() {
             // Initially load menu for the active category
-            var activeCategoryId = $('.tabs__link.active').data('tab');
+            var activeCategoryId = $('.category__link.active').data('tab');
             getMenuItems(activeCategoryId);
 
             // Attach event listener to the category buttons
-            $('.tabs__link').on('click', function() {
-                $('.tabs__link').removeClass('active');
+            $('.category__link').on('click', function() {
+                $('.category__link').removeClass('active');
                 $(this).addClass('active');
                 activeCategoryId = $(this).data('tab');
                 getMenuItems(activeCategoryId);
@@ -164,11 +164,28 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        var locationSelect = document.getElementById('locationSelect');
+        var locationButtons = document.querySelectorAll('.locations-tab');
         var locationForm = document.getElementById('locationForm');
 
-        locationSelect.addEventListener('change', function() {
-            locationForm.submit();
+        locationButtons.forEach(function(button) {
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+
+                // Get the selected location ID from the data attribute
+                var selectedLocationId = button.getAttribute('data-tab');
+
+                // Create a hidden input element to store the selected location ID
+                var locationIdInput = document.createElement('input');
+                locationIdInput.type = 'hidden';
+                locationIdInput.name = 'location_id';
+                locationIdInput.value = selectedLocationId;
+
+                // Append the hidden input to the form
+                locationForm.appendChild(locationIdInput);
+
+                // Submit the form
+                locationForm.submit();
+            });
         });
     });
 </script>

@@ -24,24 +24,29 @@
                         </li>
                     @endif
 
-                    @if ($show['menu_sh'] == 1)
+                    @if ($show['menu_sh'] == 1 || $show['retail_menu_sh'] == 1)
+
                         <li class="dropdown simple-dropdown">
                             <a aria-current="page" class="active" aria-label="Pages">Menus</a>
                             <!-- Sub menu -->
                             <ul class="dropdown-menu">
+                                @if ($show['menu_sh'] == 1)
                                 <li class="dropdown">
                                     <a class="dropdown" data-bs-toggle="dropdown" href="{{ url('/restaurant-menu') }}"
                                         aria-label="restaurant">Restaurant</a>
                                 </li>
+                                @endif
+                                @if ($show['retail_menu_sh'] == 1)
+
                                 <li class="dropdown">
                                     <a class="dropdown" data-bs-toggle="dropdown" href="{{ url('/retail-menu') }}"
                                         aria-label="Retail Menu">Retail Menu</a>
                                 </li>
-
+                               @endif
                             </ul>
                             <!--/ Sub menu -->
                         </li>
-                    @endif
+                        @endif
 
                     @if ($show['blog_sh'] == 1)
                         <li>
